@@ -14,6 +14,4 @@ h1 {color: #28a745; }
 p {font-size: 18px; }
 a {color: #007bff; text-decoration: none; }
 a:hover {text-decoration: underline; }
-</style>    
-
-
+</style>

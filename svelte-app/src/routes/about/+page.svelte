@@ -12,6 +12,4 @@
 <style>
     h1 {color: #007bff; }
     p {font-size: 18px; }
-</style>    
-
-
+</style>
