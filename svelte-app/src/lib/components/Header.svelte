@@ -7,6 +7,7 @@
         <img src="/logo.png" alt="Website Logo">
         <h1>My Svelte App</h1>
     </div>
+
     <Navigation />
 </header>
 
@@ -25,8 +26,19 @@
         align-items: center;
     }
 
-    .logo {
+    .logo img{
         width: 50px;
         margin-right: 0.625rem;
+    }
+
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .logo {
+            justify-content: center;
+        }
     }
 </style>

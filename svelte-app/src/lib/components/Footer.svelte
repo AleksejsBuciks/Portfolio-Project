@@ -16,4 +16,12 @@
         bottom: 0;
         width: 100%;
     }
+
+    @media (max-width: 768px) {
+        footer {
+            padding: 0.75rem;
+            position: relative;
+            font-size: 0.9rem;
+        }
+    }
 </style>

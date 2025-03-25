@@ -12,11 +12,11 @@
 
 <div class="gallery">
   <Card title="Card 1" desciption="This is the First Card." />
-  <Card title="Card 1" desciption="This is the Second Card." />
-  <Card title="Card 1" desciption="This is the Third Card." />
-  <Card title="Card 1" desciption="This is the Fourth Card." />
-  <Card title="Card 1" desciption="This is the Fifth Card." />
-  <Card title="Card 1" desciption="This is the Sixth Card." />
+  <Card title="Card 2" desciption="This is the Second Card." />
+  <Card title="Card 3" desciption="This is the Third Card." />
+  <Card title="Card 4" desciption="This is the Fourth Card." />
+  <Card title="Card 5" desciption="This is the Fifth Card." />
+  <Card title="Card 6" desciption="This is the Sixth Card." />
 </div>
 
 <style>
