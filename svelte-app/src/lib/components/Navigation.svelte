@@ -1,5 +1,5 @@
 <script>
-    
+    let isOpen = false; // Menu State (open/closed)
 </script>
 
 <nav>
