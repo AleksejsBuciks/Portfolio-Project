@@ -7,9 +7,10 @@
     })
 </script>
 
+<div class="Heading">
 <h1>Welcome to my Svelte App</h1>
 <p>This is the homepage of our SveleKit app</p>
-
+</div>
 <div class="gallery">
   <Card title="Card 1" desciption="This is the First Card." />
   <Card title="Card 2" desciption="This is the Second Card." />
@@ -85,5 +86,9 @@
   /* Exclude the first and last card from being affected by nth-child styling */
   :global(.gallery > .card:not(:first-child):not(:last-child)) {
       border-radius: 18px; /* Softens edges for middle cards */
+  }
+
+  .Heading {
+    text-align: center;
   }
 </style>    
