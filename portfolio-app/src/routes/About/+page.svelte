@@ -24,53 +24,53 @@
   <style>
 
   body {
-  background-color: #1e2a38;
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+    background-color: #1e2a38;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
 
 .header {
-  text-align: center;
-  font-size: 24px;
-  color: #7d0edf;
-  margin-top: 20px;
-  cursor: pointer;
+    text-align: center;
+    font-size: 24px;
+    color: #7d0edf;
+    margin-top: 20px;
+    cursor: pointer;
 }
 
 .about-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 60px auto;
-  max-width: 900px;
-  border: 2px solid #7d0edf;
-  padding: 30px;
-  margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 60px auto;
+    max-width: 900px;
+    border: 2px solid #7d0edf;
+    padding: 30px;
+    margin-top: 100px;
 }
 
 .about-text {
-  flex: 1;
-  color: white;
-  padding-right: 30px;
-  font-size: 18px;
-  line-height: 1.6;
+    flex: 1;
+    color: white;
+    padding-right: 30px;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 .about-image {
-  flex: 1;
-  border-left: 2px solid #7d0edf;
-  margin-left: 30px;
-  min-height: 300px; 
+    flex: 1;
+    border-left: 2px solid #7d0edf;
+    margin-left: 30px;
+    min-height: 300px; 
 }
 
 .about-image img {
-  width: 100%;
-  height: auto;
-  max-height: none; 
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-height: none; 
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
 }
   </style>
   

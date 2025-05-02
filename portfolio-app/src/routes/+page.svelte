@@ -23,7 +23,7 @@
 <style>
 
 .greet, .projects {
-  margin-top: 100px;
+    margin-top: 100px;    
 }
 
   .greet {
