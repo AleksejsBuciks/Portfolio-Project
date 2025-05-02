@@ -1,11 +1,7 @@
 <script>
     import { onMount } from 'svelte';
   let menuOpen = false;
-
-  onMount(() => {
-    console.log("Home Page Loaded");  
-  });
-
+  
   function toggleMenu() {
     menuOpen = !menuOpen;   
   } 
@@ -93,10 +89,6 @@
 
 .side-menu a:hover {
   color: #7d0edf;
-}
-
-.greet, .projects, .text-row {
-  margin-top: 100px;
 }
 
 </style>

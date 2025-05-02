@@ -2,11 +2,11 @@
     function goHome() {
       window.location.href = '/'; 
     }
+
+    import Nav from "$lib/Nav.svelte";
   </script>
-  
-  <div class="header" on:click={goHome}>
-    Portfolio
-  </div>
+
+  <Nav></Nav>  
   
   <div class="about-container">
     <div class="about-text">
@@ -46,6 +46,7 @@
   max-width: 900px;
   border: 2px solid #7d0edf;
   padding: 30px;
+  margin-top: 100px;
 }
 
 .about-text {
