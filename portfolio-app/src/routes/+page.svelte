@@ -1,117 +1,200 @@
 <script>
     import { onMount } from 'svelte';
-    
-    onMount(() => {
-      console.log("Home Page Loaded");  
-    })
+  let menuOpen = false;
 
-    const hamMenu = document.querySelector(".ham-menu");
+  onMount(() => {
+    console.log("Home Page Loaded");  
+  });
 
-    const offScreenMenu = document.querySelector(".off-screen-menu");
-    
-    hamMenu?.addEventListener("click", () => {
-      hamMenu.classList.toggle("active");
-      offScreenMenu?.classList.toggle("active");
-    });
+  function toggleMenu() {
+    menuOpen = !menuOpen;
+  } 
 
 </script>
 
-<div class="Heading">
-    
-<h1>Portfolio</h1>
+<nav class="navbar">
 
-<div class="off-screen-menu">
-  
-  <ul>
-          <li>Home</li>
-      <li>About Me</li>
-      <li>Projects</li>
-      <li>Contact</li>
-  </ul>
-</div>
+  <button class="menu-button" on:click={toggleMenu} aria-label="Toggle menu">
+    &#9776; Menu
+  </button>
+  <div class="brand">Portfolio</div>
+  <div class="contact">Socials</div>
 
-<nav>
-  <div class="ham-menu">
-      <span></span>
-      <span></span>
-      <span></span>
-  </div>
 </nav>
 
+<div class="side-menu {menuOpen ? 'open' : ''}">
+
+  <a href="/">Home</a>
+  <a href="Projects">Projects</a>
+  <a href="About">About</a>
+  <a href="d">Contact</a>
+
 </div>
 
+<div class="greet">
+
+  <p>Greetings! I am Alex and I design, research and code websites & games.</p>
+
+</div>
+
+<div class="projects">
+
+  <p>Projects</p>
+
+</div>
+
+<div class="text-row">
+
+  <div class="box">
+    <div class="logo html">HTML<br>5</div>
+    <p>I've worked extensively with HTML to create structured, responsive web pages and ensure cross-browser compatibility.</p>
+  </div>
+
+  <div class="box">
+    <div class="logo js">JS</div>
+    <p>I have hands-on experience with JavaScript, building dynamic and interactive web applications.</p>
+  </div>
+
+  <div class="box">
+    <div class="logo css">C++</div>
+    <p>I have experience using C++ to develop efficient, high-performance applications, utilizing object-oriented principles and managing memory effectively.</p>
+  </div>
+
+</div>
 
 
 <style>
-      
-  .Heading {
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #141d26;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  color: #7d0edf;
+  font-size: 18px;
+  cursor: pointer;
+}
+.menu-button:focus {
+  outline: 2px solid #7d0edf;
+}
+
+.brand {
+  color: #7d0edf;
+  font-size: 24px;
+}
+
+.contact {
+  color: white;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -220px;
+  width: 220px;
+  height: 100vh;
+  background-color: #1e2a38;
+  padding: 60px 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: left 0.3s ease;
+  z-index: 999;
+}
+
+.side-menu.open {
+  left: 0;
+}
+
+.side-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.side-menu a:hover {
+  color: #7d0edf;
+}
+
+.greet, .projects, .text-row {
+  margin-top: 100px;
+}
+
+  .greet {
+    text-align: center;    
+    font-size: 40px;
+    margin-top: 175px;
+    width: 40%;
+    margin-left: 450px;
+  }
+  
+  .projects {
     text-align: center;
+    margin-top: 150px;
+    font-size: 30px;
+    color: aliceblue;
+    background-color: #7d0edf;
+    height: 50px;
+    width: 175px;
+    margin-left: 675px;
+    border-radius: 100px;
   }
 
-  .off-screen-menu{
-    background-color: black;
-    height: 100vh;
-    width: 100%;
-    max-width: 450px;
-    position: fixed;
-    top: 0;
-    right: -450px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 3rem;
-    transition: .3s ease;
-   }
-   .off-screen-menu.active{
-    right: 0;
-   }
+  .text-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 250px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
 
-   nav {
-    padding: 1rem;
-    display: flex;
-    background-color: #141d26;
-   }
+.box {
+  background-color: #7d0edf;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  color: white;
+}
 
-   .ham-menu{
-    height: 50px;
-    width: 50px;
-    margin-left: auto;
-    position: relative;
-   }
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+}
 
-   .ham-menu span{
-    height: 5px;
-    width: 100%;
-    background-color: #7d0edf;
-    border-radius: 25px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: .3s ease;
-   }
+.logo.html {
+  background-color: #e44d26;
+}
 
-   .ham-menu span:nth-child(1){
-    top: 25%;
-   } 
+.logo.js {
+  background-color: #f7df1e;
+  color: black;
+}
 
-   .ham-menu span:nth-child(3){
-    top: 75%;
-   }
-
-   .ham-menu.active span:nth-child(1){
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-   }
-
-   .ham-menu.active span:nth-child(2){
-    opacity: 0;
-   }
-
-   .ham-menu.active span:nth-child(3){
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
-   }
+.logo.css {
+  background-color: #4dabf7;
+}
 </style>    
