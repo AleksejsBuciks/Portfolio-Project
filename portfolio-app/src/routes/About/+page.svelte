@@ -21,22 +21,7 @@
     </div>
   </div>
   
-  <style>
-
-  body {
-    background-color: #1e2a38;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
-
-.header {
-    text-align: center;
-    font-size: 24px;
-    color: #7d0edf;
-    margin-top: 20px;
-    cursor: pointer;
-}
+  <style>  
 
 .about-container {
     display: flex;

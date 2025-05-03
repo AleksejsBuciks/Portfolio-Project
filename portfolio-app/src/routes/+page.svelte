@@ -1,6 +1,8 @@
 <script>
     import Nav from '$lib/Nav.svelte';
     import Footer from '$lib/Footer.svelte';
+    import Project from '$lib/Project.svelte';
+    import Cont from '$lib/Cont.svelte';
 </script>
 
 <Nav></Nav>
@@ -13,12 +15,15 @@
 
 <div class="projects">
 
-  <p>Projects</p>
+  <a href="Projects">Projects</a>
 
 </div>
 
 <Footer></Footer>
 
+<Project></Project>
+
+<Cont></Cont>
 
 <style>
 
@@ -45,4 +50,6 @@
     margin-left: 675px;
     border-radius: 100px;
   }  
+
+  
 </style>    
