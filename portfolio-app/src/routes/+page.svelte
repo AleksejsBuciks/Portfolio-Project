@@ -1,8 +1,8 @@
 <script>
-    import Nav from '$lib/Nav.svelte';
-    import Footer from '$lib/Footer.svelte';
-    import Project from '$lib/Project.svelte';
-    import Cont from '$lib/Cont.svelte';
+    import Nav from '$lib/components/Nav.svelte';
+    import Footer from '$lib/components/Footer.svelte';
+    import Project from '$lib/components/Project.svelte';
+    import Cont from '$lib/components/Cont.svelte';
 </script>
 
 <Nav></Nav>

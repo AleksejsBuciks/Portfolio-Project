@@ -1,25 +1,25 @@
 <script>
-      import { base } from '$app/paths';
+      
 </script>
 
 <div class="project-row">
 
     <div class="project-box">
-      <img src="{base}/flatland.png" alt="" />
+      <img src="flatland.png" alt="" />
       <p>I took the text of the book Flatland by Edwin Abbott and made it readable on a webpage, browser and mobile.</p>
-      <a href="{base}/https://codeberg.org/Aleksejs-Buciks/C00300235-Aleksejs-Buciks-Flatland-Webpage"><button class="project-btn">See Project</button></a>
+      <a href="https://codeberg.org/Aleksejs-Buciks/C00300235-Aleksejs-Buciks-Flatland-Webpage"><button class="project-btn">See Project</button></a>
     </div>
   
     <div class="project-box">
-      <img src="{base}/trainer.png" alt="" />
+      <img src="trainer.png" alt="" />
       <p>I created a simple collection game in JavaScript where you have to collect 10 pallets while an enemy chases you.</p>
-      <a href="{base}/https://codeberg.org/UI-Programming-24-25/Aleksejs_Buciks_C00300235-UI-Programming-Module-Project"><button class="project-btn">See Project</button></a>
+      <a href="https://codeberg.org/UI-Programming-24-25/Aleksejs_Buciks_C00300235-UI-Programming-Module-Project"><button class="project-btn">See Project</button></a>
     </div>
   
     <div class="project-box">
-      <img src="{base}/mega-man.png" alt="" />
+      <img src="mega-man.png" alt="" />
       <p>In C++ I coded a mockup level of the classic game Mega Man from the Nintendo Entertainment System.</p>
-      <a href="{base}/https://github.com/PeterLowe/springinteractive24-AleksejsBuciks"><button class="project-btn">See Project</button></a>
+      <a href="https://github.com/PeterLowe/springinteractive24-AleksejsBuciks"><button class="project-btn">See Project</button></a>
       
     </div>
 
