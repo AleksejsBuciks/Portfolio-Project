@@ -5,6 +5,9 @@
   function toggleMenu() {
     menuOpen = !menuOpen;   
   } 
+
+  import { base } from '$app/paths';
+
 </script>
 
 <nav class="navbar">
@@ -18,10 +21,10 @@
   
   <div class="side-menu {menuOpen ? 'open' : ''}">
   
-    <a href="/">Home</a>
-    <a href="Projects">Projects</a>
-    <a href="About">About</a>
-    <a href="Contact">Contact</a>
+    <a href="{base}/">Home</a>
+    <a href="{base}/Projects">Projects</a>
+    <a href="{base}/About">About</a>
+    <a href="{base}/Contact">Contact</a>
   
   </div>
 
